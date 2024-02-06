@@ -27,7 +27,7 @@ server.use("/bookingservice", async (req, res, next) => {
         );
         next();
     } catch (error) {
-        res.status(401).json({ unautorized: false });
+        res.status(402).json({ unautorized: false });
     }
 });
 server.use(
